@@ -1,21 +1,13 @@
 import React, { ReactNode } from 'react';
-import {
-  Body1Typography,
-  Body2Typography,
-  ItemTitleTypography,
-  PaginationTypography,
-  SmallTypography,
-  SubtitleTypography,
-  TitleTypography,
-} from './Typography.styles';
-import { TypographyMixinsProps } from '../../assets/styles/themes/types/mixinsValues/TypographyMixins';
+import { Body1Typography, Body2Typography, TitleTypography } from './Typography.styles';
 
-type TypographyVariant = 'body1' | 'body2' | 'small' | 'itemTitle' | 'title' | 'subtitle' | 'pagination';
+type TypographyVariant = 'body1' | 'body2' | 'title';
 
 type TypographyProps = {
   children: ReactNode;
   variant: TypographyVariant;
-} & TypographyMixinsProps;
+  className?: string;
+};
 
 export const Typography = (props: TypographyProps) => {
   const TypographyVariant = TYPOGRAPHY_VARIANT_MAP[props.variant];
@@ -28,9 +20,5 @@ const TYPOGRAPHY_VARIANT_MAP: {
 } = {
   body1: Body1Typography,
   body2: Body2Typography,
-  small: SmallTypography,
-  itemTitle: ItemTitleTypography,
   title: TitleTypography,
-  subtitle: SubtitleTypography,
-  pagination: PaginationTypography,
 };

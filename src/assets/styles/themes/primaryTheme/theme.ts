@@ -11,6 +11,6 @@ export const theme: Theme = {
   fontWeights,
   lineHeights,
   mixins,
-  sizes,
   typographies,
+  sizes,
 };

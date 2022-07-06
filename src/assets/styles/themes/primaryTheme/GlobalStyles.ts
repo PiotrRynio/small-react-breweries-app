@@ -8,26 +8,24 @@ export const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
     padding: 0; 
   } 
   
-  body {
+  body { 
     background-color: ${({ theme }) => theme.colors.background};
     font-family: ${({ theme }) => theme.fontFamilies.primary};
-  }
+  } 
    
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 16px;
+  } 
+  
+  ::-webkit-scrollbar-track-piece  {
+    background:  ${({ theme }) => theme.colors.scrollbarTrackPiece}
+
   }
-  ::-webkit-scrollbar-track {
-    border-right: 0  ${({ theme }) => theme.colors.primary} solid;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.colors.primary};
-    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.primary};
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.colors.primary};
-    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.primary};
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: ${({ theme }) => theme.colors.primary};
+  
+  ::-webkit-scrollbar-thumb { 
+    border: 4px solid transparent;
+    border-radius: 9px; 
+    background: ${({ theme }) => theme.colors.scrollbarThumb};
+    background-clip: content-box;
   }
 `;

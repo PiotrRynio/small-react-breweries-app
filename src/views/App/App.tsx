@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { NotFound, Searcher, User } from 'views';
+import { NotFound, Home } from 'views';
 import { TopBar } from 'components';
 import { MainSection, Wrapper } from './App.styles';
 
@@ -9,8 +9,7 @@ export const App = () => {
       <TopBar />
       <MainSection>
         <Routes>
-          <Route path="/" element={<Searcher />} />
-          <Route path="/user" element={<User />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainSection>

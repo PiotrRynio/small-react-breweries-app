@@ -10,6 +10,6 @@ export interface Theme {
   fontWeights: FontWeights;
   lineHeights: LineHeights;
   mixins: Mixins;
-  sizes: Sizes;
   typographies: Typographies;
+  sizes: Sizes;
 }

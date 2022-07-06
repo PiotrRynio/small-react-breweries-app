@@ -1,1 +1,3 @@
-export * from './ExampleDto';
+export * from './AutocompleteSearchBreweriesDto';
+export * from './BreweryDto';
+export * from './BreweriesDto';

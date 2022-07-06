@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { GlobalStyles, theme } from 'assets/styles/themes/primaryTheme';
 import { fontsPaths } from 'assets/styles';
-import { PageTitleProvider } from './appProviders';
+import { AppContextProvider, PageTitleProvider } from './appProviders';
 
 export const AllAppProviders = ({ children }: { children: ReactNode }) => {
   const queryClient = new QueryClient();
@@ -13,14 +13,16 @@ export const AllAppProviders = ({ children }: { children: ReactNode }) => {
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <PageTitleProvider>
-          <ThemeProvider theme={theme}>
-            <Helmet>
-              <meta name="description" content="Github searcher application" />
-              <link rel="stylesheet" href={fontsPaths.primaryFont} />
-            </Helmet>
-            <GlobalStyles theme={theme} />
-            {children}
-          </ThemeProvider>
+          <AppContextProvider>
+            <ThemeProvider theme={theme}>
+              <Helmet>
+                <meta name="description" content="Github searcher application" />
+                <link rel="stylesheet" href={fontsPaths.primaryFont} />
+              </Helmet>
+              <GlobalStyles theme={theme} />
+              {children}
+            </ThemeProvider>
+          </AppContextProvider>
         </PageTitleProvider>
       </QueryClientProvider>
     </HelmetProvider>

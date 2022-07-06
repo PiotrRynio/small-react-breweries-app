@@ -7,9 +7,5 @@ export const Wrapper = styled.header`
   padding: 0 20px;
   justify-content: space-between;
   align-items: center;
-  background: ${({ theme }) => theme.colors.primary};
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    height: ${({ theme }) => theme.sizes.topBarHeight.md};
-  }
+  background: ${({ theme }) => theme.colors.topBarBackground};
 `;

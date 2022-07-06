@@ -1,3 +1,3 @@
-import { exampleHandlers } from './exampleRequest/handlers/exampleHandlers';
+import { breweriesHandlers } from './breweriesRequest/handlers/breweriesHandlers';
 
-export const handlers = [...exampleHandlers];
+export const handlers = [...breweriesHandlers];

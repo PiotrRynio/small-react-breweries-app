@@ -1,25 +1,25 @@
 import React, { createContext, useState } from 'react';
 
 type AppContextType = {
-  playerName: string;
-  setPlayerName: (newPlayerName: string) => void;
+  breweryId: string;
+  setBreweryId: (newBreweryId: string) => void;
 };
 
 const appContextDefaultValue = {
-  playerName: '',
-  setPlayerName: () => {},
+  breweryId: '',
+  setBreweryId: () => {},
 };
 
 const AppContext = createContext<AppContextType>(appContextDefaultValue);
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [playerName, setPlayerName] = useState<string>(appContextDefaultValue.playerName);
+  const [breweryId, setBreweryId] = useState<string>(appContextDefaultValue.breweryId);
 
   return (
     <AppContext.Provider
       value={{
-        playerName,
-        setPlayerName,
+        breweryId,
+        setBreweryId,
       }}
     >
       {children}

@@ -1,11 +1,11 @@
 import logo from 'assets/images/logo/logo.svg';
-import { LogoImage } from './Logo.styles';
 import { Link } from 'react-router-dom';
+import { LogoImage } from './Logo.styles';
 
 export const Logo = () => {
   return (
     <Link to={'/'}>
-      <LogoImage src={logo} alt={'github logo'} />
+      <LogoImage src={logo} alt={'Brewery App Logo'} />
     </Link>
   );
 };
