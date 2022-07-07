@@ -7,6 +7,6 @@ describe(`<App>`, () => {
     render(<App />);
 
     // then
-    screen.getByRole('img', { name: /github logo/i });
+    screen.getByRole('img', { name: /Brewery App Logo/i });
   });
 });

@@ -1,1 +1,2 @@
-export * from './StarIcon';
+export * from './FetchingIcon';
+export * from './ChevronIcon';

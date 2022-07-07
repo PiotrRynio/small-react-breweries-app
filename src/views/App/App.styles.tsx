@@ -8,6 +8,7 @@ export const Wrapper = styled.section`
 `;
 
 export const MainSection = styled.section`
+  width: 100%;
   max-width: 950px;
   margin: 30px auto 70px;
 

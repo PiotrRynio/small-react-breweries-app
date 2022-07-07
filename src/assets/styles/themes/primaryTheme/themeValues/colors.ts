@@ -9,9 +9,11 @@ export const colors: Colors = {
   searcher: '#1E54BA',
   searcherBackground: '#1B1D24',
 
+  disabled: '#8D959F',
+
   background: '#1B1D24',
-  topBarBackground: '#ca8a04',
   backgroundWithHover: '#242A3D',
+  topBarBackground: '#333',
 
   border: '#383E54',
 

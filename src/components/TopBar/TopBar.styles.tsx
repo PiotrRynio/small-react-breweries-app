@@ -8,4 +8,8 @@ export const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   background: ${({ theme }) => theme.colors.topBarBackground};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    height: ${({ theme }) => theme.sizes.topBarHeight.md};
+  }
 `;

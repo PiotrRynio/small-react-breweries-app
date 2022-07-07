@@ -7,6 +7,6 @@ describe(`<TopBar>`, () => {
     render(<TopBar />);
 
     // then
-    screen.getByRole('img', { name: /github logo/i });
+    screen.getByRole('img', { name: /Brewery App Logo/i });
   });
 });

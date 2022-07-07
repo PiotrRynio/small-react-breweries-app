@@ -6,28 +6,26 @@ export type FetchingStatusProps = {
 };
 
 export const FetchingStatus = ({ status }: FetchingStatusProps) => {
-  if (status === 'error') {
-    return (
-      <Wrapper role="status">
-        <Typography variant="body1">Api error...</Typography>
-        <Typography variant="body2">Try again!</Typography>
-      </Wrapper>
-    );
+  switch (status) {
+    case 'error':
+      return (
+        <Wrapper role="status">
+          <Typography variant="body1">Api error...</Typography>
+          <Typography variant="body2">Try again!</Typography>
+        </Wrapper>
+      );
+    case 'loading':
+      return (
+        <Wrapper role="status">
+          <Typography variant="body1">Loading...</Typography>
+        </Wrapper>
+      );
+    case 'noResults':
+      return (
+        <Wrapper role="status">
+          <Typography variant="body1">No results!</Typography>
+          <Typography variant="body2">Search something other</Typography>
+        </Wrapper>
+      );
   }
-  if (status === 'loading') {
-    return (
-      <Wrapper role="status">
-        <Typography variant="body1">Loading...</Typography>
-      </Wrapper>
-    );
-  }
-  if (status === 'noResults') {
-    return (
-      <Wrapper role="status">
-        <Typography variant="body1">No results!</Typography>
-        <Typography variant="body2">Search something other</Typography>
-      </Wrapper>
-    );
-  }
-  return null;
 };

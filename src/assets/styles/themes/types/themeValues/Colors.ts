@@ -5,6 +5,7 @@ export type Color =
   | 'linkText'
   | 'searcher'
   | 'searcherBackground'
+  | 'disabled'
   | 'background'
   | 'backgroundWithHover'
   | 'topBarBackground'
