@@ -2,7 +2,7 @@
 
 ## Overview:
 
-Small recruitment project using Open Brewery DB Api.
+Small recruitment project using Open Brewery DB Api. In this Breweries App you will find searcher, pagination and additional page with brewery details.
 
 - Demo on Netlify: [LINK](https://samll-breweries-app.netlify.app/)
 - API URL: [Open Brewery DB Api](https://api.openbrewerydb.org)
