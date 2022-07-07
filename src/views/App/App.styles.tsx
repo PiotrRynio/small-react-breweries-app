@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 
 export const MainSection = styled.section`
   width: 100%;
-  max-width: 950px;
+  max-width: 700px;
   margin: 30px auto 70px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {

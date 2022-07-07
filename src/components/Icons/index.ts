@@ -1,2 +1,2 @@
-export * from './FetchingIcon';
+export * from './SearchIcon';
 export * from './ChevronIcon';

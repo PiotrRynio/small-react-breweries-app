@@ -6,19 +6,9 @@ import { BreweriesDto } from 'types';
 export type Brewery = {
   id: string;
   name: string;
-  breweryType: string;
-  street?: string;
   city: string;
-  state: string;
-  countyProvince?: string;
-  postalCode: string;
   country: string;
-  longitude?: string;
-  latitude?: string;
-  phone?: string;
-  websiteUrl?: string;
   updatedAt: Date;
-  createdAt: Date;
 };
 
 export type UseBreweries = {
@@ -46,19 +36,9 @@ export const useBreweries = ({ searchedText = '', pageNumber = 1 }: UseBreweries
     const breweries: Brewery[] = breweriesDto.map((brewery) => ({
       id: brewery.id,
       name: brewery.name,
-      breweryType: brewery.brewery_type,
-      street: brewery.street || undefined,
       city: brewery.city,
-      state: brewery.state,
-      countyProvince: brewery.county_province || undefined,
-      postalCode: brewery.postal_code,
       country: brewery.country,
-      longitude: brewery.longitude || undefined,
-      latitude: brewery.latitude || undefined,
-      phone: brewery.phone || undefined,
-      websiteUrl: brewery.website_url || undefined,
       updatedAt: new Date(brewery.updated_at),
-      createdAt: new Date(brewery.created_at),
     }));
 
     const orderNumberOfFirstItemInNextPage = pageNumber * perPage + 1;

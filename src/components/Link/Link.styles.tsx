@@ -6,3 +6,9 @@ export const StyledLink = styled(NavLink)`
   color: inherit;
   cursor: pointer;
 `;
+
+export const StyledExternalLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+`;

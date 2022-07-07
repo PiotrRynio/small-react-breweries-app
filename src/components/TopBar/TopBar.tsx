@@ -1,11 +1,15 @@
 import { Logo, Searcher } from 'components';
 import { Wrapper } from './TopBar.styles';
 
-export const TopBar = () => {
+type TopBarProps = {
+  isSearcher?: boolean;
+};
+
+export const TopBar = ({ isSearcher = false }: TopBarProps) => {
   return (
     <Wrapper>
       <Logo />
-      <Searcher />
+      {isSearcher ? <Searcher /> : null}
     </Wrapper>
   );
 };

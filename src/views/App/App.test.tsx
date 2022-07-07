@@ -8,5 +8,7 @@ describe(`<App>`, () => {
 
     // then
     screen.getByRole('img', { name: /Brewery App Logo/i });
+    screen.getByLabelText(/searcher/i);
+    screen.getByRole('heading', { name: /Breweries/i, level: 2 });
   });
 });
