@@ -4,7 +4,7 @@
 
 Small recruitment project using Open Brewery DB Api.
 
-- Demo on Netlify: [LINK](https://github.com/PiotrRynio)
+- Demo on Netlify: [LINK](https://samll-breweries-app.netlify.app/)
 - API URL: [Open Brewery DB Api](https://api.openbrewerydb.org)
 - Repo url: [LINK](https://github.com/PiotrRynio)
 -
